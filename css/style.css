@@ -5,6 +5,7 @@
 }
 
 /* main text color: #5A0001;
+alternate body #c23616;
 alt text color: #813405; */
 /* dark background color: #363020
 light background color: #EADCDE;
@@ -18,6 +19,11 @@ body {
 h1,h2,h3,h4,h5,h6 {
   color: #813405;
   margin-bottom: 1rem;
+  text-size: 5rem;
+}
+
+.restaurant-listing  {
+  margin-bottom: 2rem; 
 }
 
 .flex-flip:nth-child(2n){  flex-direction: row-reverse; }
@@ -94,6 +100,11 @@ h2  { font-size: 2.2rem;  }
   background-size: cover;
 }
 
+.bg-img p {
+  color: #5A0001;
+  font-size: 2rem;
+}
+
 a{
   color: #5A0001;
   text-decoration: underline;
@@ -125,6 +136,10 @@ section {
   padding: 5%;
 }
 
+.padded-1 {
+  padding: .5rem;
+}
+
 .padding-1 {
   padding: 1rem;
 }
@@ -138,6 +153,18 @@ section {
 
 }
 
+.padding-0 {
+  padding: 0;
+}
+
+.right {
+  text-align: right;
+}
+
 .full-width {
   width: 100%;
+}
+
+.fixed {
+  background-attachment: fixed;
 }

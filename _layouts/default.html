@@ -1,37 +1,60 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title> Celiac Compass </title>
-    <link rel="stylesheet" href="/css/style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,700,700i|Playfair+Display:400,400i,700,700i|Roboto&display=swap" rel="stylesheet">
-  </head>
-  <section>
-    <body>
-      <header class="grid-middle centered padded-1">
-        <nav class="col-4-middle padded-1">
-          <a class= padded href="#"> Destinations </a>
-          <a class= padded href="#"> Cuisines </a>
-          <a class= padded href="#"> Restaurants </a>
-        </nav>
-        <div class="col-3-middle centered padded-1">
-          <a href="/">
-            <h2 class="logo"> Celiac Compass </h2>
-          </a>
-        </div>
-        <nav class="col-4-middle padded-1">
-          <a class= padded href="#"> Contributers </a>
-          <a class= padded href="#"> Work With Us </a>
-          <a class= padded href="#"> Contact Us </a>
-        </nav>
-      </header>
-    </body>
-  </section>
+<head>
+  <meta charset="utf-8">
+  <title> Celiac Compass: {{page title}} </title>
+  <link rel="stylesheet" href="/css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,700,700i|Playfair+Display:400,400i,700,700i|Roboto&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <header class="grid-middle centered padding-1">
+      <nav class="col-4-middle">
+        <a class= padded href="#"> Destinations </a>
+        <a class= padded href="#"> Cuisines </a>
+        <a class= padded href="#"> Restaurants </a>
+      </nav>
+      <div class="col-3-middle centered padding-1">
+        <a href="/">
+          <h2 class="logo"> Celiac Compass </h2>
+        </a>
+      </div>
+      <nav class="col-4-middle centered padding-1">
+        <a class= padded href="#"> Contributers </a>
+        <a class= padded href="#"> Work With Us </a>
+        <a class= padded href="#"> Contact Us </a>
+      </nav>
+    </header>
 
-        {{content}}
+{{content}}
 
-
-
-    </html>
+<footer>
+  <footer class="grid padded dark-section">
+    <div class="col-5_sm-12 padded">
+      <h2 class="logo"> Logo </h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+    <div class="col-1 sm-hidden"></div>
+    <div class="col-6_sm-12-middle padded right">
+      <nav class="inline">
+        <a href="#"> Lorem ipsum </a>|
+        <a href="#"> Dolor sit </a>|
+        <a href="#"> Consectetur </a>
+      </nav>
+      <nav class="inline socials">
+        <a href="#">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </nav>
+    </div>
+  </footer>
+  </body>
+</html>

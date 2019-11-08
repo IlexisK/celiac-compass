@@ -1,5 +1,11 @@
 ---
 layout: default
+title: Cuisines
+faqs:
+  - question: Is there Flour in This?
+    answer: lorem
+  - question: Is there Soy Sauce in This?
+    answer: lorem
 ---
 
     <section class="padded centered">
@@ -50,21 +56,26 @@ layout: default
     </section>
     <section class="padded">
 
-  <h2 class="centered padded-1"> How to Say You are Gluten Free - Language Tips </h2>
-
-  <dl class="accordion light-bg padded-1">
-
-    <dt><a href=""> Flour</a></dt>
-    <dd>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
-
-    <dt><a href=""> Please </a></dt>
-    <dd>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
-
-    <dt><a href=""> Thank You </a></dt>
-    <dd> Suksama </dd>
-
-  </dl>
+<section class="padded">
+  <h2 class="centered padded-1"> How to Say You are Gluten Free or Language Tips </h2>
+  <dl class="">
+      {% for faq in page.faqs %}
+      <dt class="padded-1">
+        <a href="#">
+          {{faq.question}}
+        </a>
+      </dt>
+      <dd>
+        {{faq.answer}}
+      </dd>
+      {% endfor %}
+    </dl>
 </section>
+
+
+
+
+
 <section class="grid">
   <div class="col-4_sm-6_xs-12 padded">
     <h2> Nutritional Information </h2>
@@ -73,25 +84,43 @@ layout: default
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
     <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
-</section>
-      <section class="light-bg">
-  <div class="grid  flex-flip">
-    <div class="col-6_sm-12 bg-image">
-    </div>
-    <div class="col-6_sm-12-middle padded">
-      <h3> This this a heading </h3>
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-      <a class="arrow" href="#"> > </a>
+
+<section class="padded">
+  <div class="restaurant-listing">
+    <div class="grid padded mob-flip">
+      <div class="col-5_sm-12 bg-image" style="background-image: url(/images/bali.jpg)">
+      </div>
+      <div class="col-7_sm-12-middle">
+        <div class="padded">
+          <h4 class="subtle-heading">
+            Lorem ipsum dolor sit amet
+          </h4>
+          <h3>
+            Lorem
+          </h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a class="button" href=""> Read More </a>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="grid flex-flip">
-    <div class="col-6_sm-12 bg-image">
-    </div>
-    <div class="col-6_sm-12-middle padded">
-      <h3> This this a heading </h3>
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-      <a class="arrow" href="#"> > </a>
+  <div class="restaurant-listing">
+    <div class="grid padded mob-flip">
+      <div class="col-5_sm-12 bg-image" style="background-image: url(/images/bali.jpg)">
+      </div>
+      <div class="col-7_sm-12-middle">
+        <div class="padded">
+          <h4 class="subtle-heading">
+            Lorem ipsum dolor sit amet
+          </h4>
+          <h3>
+            Lorem
+          </h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a class="button" href=""> Read More </a>
+        </div>
+      </div>
     </div>
   </div>
-</section>
+  </section>
 <body>
