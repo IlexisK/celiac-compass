@@ -4,19 +4,19 @@
   box-sizing: border-box;
 }
 
-/* main text color: #e84118
-alt text color: #d35400 or #c0392b
-dark background color: #7f8c8d
-light background color: #dcdde1
-darker background color: #34495e */
+/* main text color: #5A0001;
+alt text color: #813405; */
+/* dark background color: #363020
+light background color: #EADCDE;
+alt light background color: #D3793D; */
 
 body {
   font-family: 'Nunito' sans-serif;
-  color: #e84118;
+  color: #5A0001;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  color: #c0392b;
+  color: #813405;
   margin-bottom: 1rem;
 }
 
@@ -28,7 +28,7 @@ img {
 }
 
 h1 {
-  font-size: 5rem; 
+  font-size: 5rem;
 }
 h2  { font-size: 2.2rem;  }
   h3  { font-size: 1.8rem;  }
@@ -58,7 +58,7 @@ h2  { font-size: 2.2rem;  }
 
   .btn {
     text-decoration: none;
-    color: #c0392b;
+    color: #EADCDE;
     border: 2px solid;
     padding: 0.6rem 2rem;
     margin-top: 1rem;
@@ -69,17 +69,17 @@ h2  { font-size: 2.2rem;  }
   }
 
   .btn:hover {
-    color: #e84118;
+    color: #813405;
   }
 
   .dark-section .btn {   /* this is for a button on a dark background */
-    border: 2px solid #dcdde1;
-    color: #dcdde1;
+    border: 2px solid #363020
+    color: #363020
   }
 
   .dark-section .btn:hover {
-    color: #dcdde1;
-    border-color: #e67e22;
+    color: #813405;
+    border-color: #5A0001;
   }
 
 
@@ -95,7 +95,7 @@ h2  { font-size: 2.2rem;  }
 }
 
 a{
-  color: #c0392b;
+  color: #5A0001;
   text-decoration: underline;
 }
 
@@ -105,7 +105,7 @@ p{
 }
 
 a:hover {
-  color: #e84118;
+  color: #D3793D;
 }
 
 section {
@@ -116,8 +116,8 @@ section {
 }
 
 .dark-section {
-  background-color: #7f8c8d;
-  color: #dcdde1;
+  background-color: #363020
+  color: #EADCDE;
 }
 
 
