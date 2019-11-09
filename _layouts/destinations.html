@@ -116,7 +116,8 @@ layout: default
       </h2>
 
       <div class="grid-center padded">
-        {% for cuisine in page.cuisine %}
+        {% assign location_cuisines = site.cuisines | where: "destination", page.title %}
+        {% for cuisine in location_cuisines %}
           <div class="col-4">
             <div class="cuisines">
               <div class="bg-img" style="background-image: url(/images/ubud.jpg)">
@@ -126,8 +127,11 @@ layout: default
                   {{cuisine.name}}
                 </h3>
                 <p>
-                  {{cuisine.description}}
+                  {{cuisine.subtitle}}
                 </p>
+                  <a href="{{ cuisine.url }}">
+                    See More
+                  </a>
               </div>
             </div>
           </div>
