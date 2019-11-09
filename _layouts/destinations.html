@@ -89,21 +89,7 @@ layout: default
         <div class="grid-center padded">
         {% for restaurant in page.restaurants %}
           <div class="col-4">
-            <div class="restaurant-listing">
-              <div class="bg-img" style="background-image: url(/images/ubud.jpg)">
-              </div>
-              <div class="restaurant">
-                <h3>
-                  {{restaurant.subtitle}}
-                </h3>
-                <h3>
-                  {{restaurant.name}}
-                </h3>
-                <p>
-                  {{restaurant.description}}
-                </p>
-              </div>
-            </div>
+            {% include restaurant-listing.html %}
           </div>
         {% endfor %}
       </div>
@@ -119,21 +105,7 @@ layout: default
         {% assign location_cuisines = site.cuisines | where: "destination", page.title %}
         {% for cuisine in location_cuisines %}
           <div class="col-4">
-            <div class="cuisines">
-              <div class="bg-img" style="background-image: url(/images/ubud.jpg)">
-              </div>
-              <div class="cuisine">
-                <h3>
-                  {{cuisine.name}}
-                </h3>
-                <p>
-                  {{cuisine.subtitle}}
-                </p>
-                  <a href="{{ cuisine.url }}">
-                    See More
-                  </a>
-              </div>
-            </div>
+          {% include cuisine-listing.html %}
           </div>
         {% endfor %}
       </div>

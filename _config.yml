@@ -2,4 +2,6 @@ collections:
   destinations:
     output: true
   cuisines:
-    output: true 
+    output: true
+  restaurants:
+    output: true
