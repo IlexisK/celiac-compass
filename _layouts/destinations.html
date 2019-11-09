@@ -1,0 +1,158 @@
+---
+layout: default
+---
+
+
+<section class="bg-img fixed grid-top-left" style="background-image: url(/images/bali.jpg)">
+  <div class="tall-50 padding-0">
+    <h1>
+      {{page.title}}
+    </h1>
+    <p>
+      {{page.subtitle}}
+    </p>
+  </div>
+</section>
+<section class="embeded-map">
+  {{page.map}}
+</section>
+<section class="padded centered light-bg">
+  <h2 class="centered"> Helpful and Language Tips </h2>
+  <div class="grid padded-1">
+
+    {% for item in page.tips %}
+    <div class="col-4_sm-12 padded-1">
+      {{item.content_html}}
+    </div>
+    {% endfor %}
+
+  </div>
+</section>
+
+<section class="padded">
+  <h2 class="centered padded-1"> How to Say You are Gluten Free or Language Tips </h2>
+
+  <div class="grid-center">
+
+    {% for faq in page.faqs %}
+
+      <div class="col-4_sm-12 padded-1">
+        <h3>
+          {{faq.question}}
+        </h3>
+        <p>
+        {{faq.answer}}
+        </p>
+      </div>
+
+    {% endfor %}
+
+  </div>
+</section>
+
+<section class="padded light-bg">
+      <h2 class="centered">
+        Popular Areas in {{page.destination}}
+      </h2>
+      <div class="grid-center padded">
+
+        {% for area in page.areas %}
+
+          <div class="col-4">
+            <div class="area-listing">
+              <div class="bg-img" style="background-image: url({{area.featured_image}})">
+              </div>
+              <div class="area">
+                <h4>
+                  {{area.subtitle}}
+                </h4>
+                <h3>
+                  {{area.name}}
+                </h3>
+                <p>
+                  {{area.description}}
+                </p>
+              </div>
+            </div>
+          </div>
+
+        {% endfor %}
+
+      </div>
+  </section>
+  <section class="padded">
+
+        <h2 class="centered">
+          Celiac Friendly Restaurants in {{page.destination}}
+        </h2>
+
+        <div class="grid-center padded">
+        {% for restaurant in page.restaurants %}
+          <div class="col-4">
+            <div class="restaurant-listing">
+              <div class="bg-img" style="background-image: url(/images/ubud.jpg)">
+              </div>
+              <div class="restaurant">
+                <h3>
+                  {{restaurant.subtitle}}
+                </h3>
+                <h3>
+                  {{restaurant.name}}
+                </h3>
+                <p>
+                  {{restaurant.description}}
+                </p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="padded light-bg">
+
+      <h2 class="centered">
+        Common Gluten-free dishes in {{page.destination}}
+      </h2>
+
+      <div class="grid-center padded">
+        {% for cuisine in page.cuisine %}
+          <div class="col-4">
+            <div class="cuisines">
+              <div class="bg-img" style="background-image: url(/images/ubud.jpg)">
+              </div>
+              <div class="cuisine">
+                <h3>
+                  {{cuisine.name}}
+                </h3>
+                <p>
+                  {{cuisine.description}}
+                </p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+  </section>
+
+<section class="padded centered">
+  <h2> Contributers </h2>
+  <p> Meet the Contributers who wrote about Restaurants and Cuisines in {{page.destination}} </p>
+  <div class="grid padded-1">
+
+    {% for person in page.contributers %}
+
+    <div class="col-4_sm-12 padded-1">
+      <a href="{{person.url}}" class="clickable-box bg-image" style="background-image:url('{{person.featured_image}}')">
+        <div class="overlay padded light-text">
+          <h3> {{person.name}} </h3>
+          <p> Contributer </p>
+        </div>
+      </a>
+    </div>
+
+    {% endfor %}
+
+  </div>
+
+</section>
