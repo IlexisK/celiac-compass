@@ -1,0 +1,107 @@
+---
+layout: default
+---
+
+
+<section class="padded centered">
+  <h2 class="centered"> {{page.title}} </h2>
+  <div class="grid padded-1"> </div>
+    <div class="col-4_sm-12 padded-1">
+      <p> {{page.subtitle}}</p>
+    </div>
+    <div class="col-4_sm-12 padded-1">
+      <p> <strong> Main Ingredients </strong> </p>
+      <p> {{page.main-ingredients}}</p>
+    </div>
+    <div class="col-4_sm-12 padded-1">
+      {% for fact in page.facts %}
+      <p> <strong> {{fact.name}}: </strong> {{fact.value}} </p>
+      {% endfor %}
+    </div>
+  </section>
+  <section class="padded centered">
+
+    <h2> Cuisine Contributers </h2>
+    <p> Look through all individuals who also contributed a restaurant for {{page.title}} </p>
+
+    <div class="popup-gallery masonry">
+
+      <a class="item" href="/images/mountain.jpg" title="this is where you write the caption">
+        <img src='/images/mountain.jpg'>
+      </a>
+
+      <a class="item" href="/images/adventure.jpg" title="this is where you write the caption">
+        <img src='/images/adventure.jpg'>
+      </a>
+      <a class="item" href="/images/pencils.jpg" title="this is where you write the caption">
+        <img src='/images/pencils.jpg'>
+      </a>
+      <a class="item" href="/images/cocktail.jpg" title="this is where you write the caption">
+        <img src='/images/cocktail.jpg'>
+      </a>
+      <a class="item" href="/images/person.png" title="this is where you write the caption">
+        <img src='/images/person.png'>
+      </a>
+      <a class="item" href="/images/laptop.jpg" title="this is where you write the caption">
+        <img src='/images/laptop.jpg'>
+      </a>
+
+      <a class="item" href="/images/lego.jpg" title="this is where you write the caption">
+        <img src='/images/lego.jpg'>
+      </a>
+    </div>
+  </section>
+  <section class="padded">
+    <h2 class="centered padded-1"> How to Say You are Gluten Free or Language Tips </h2>
+    <dl class="">
+      {% for faq in page.faqs %}
+      <dt class="padded-1">
+        <a href="#">
+          {{faq.question}}
+        </a>
+      </dt>
+      <dd>
+        {{faq.answer}}
+      </dd>
+      {% endfor %}
+    </dl>
+  </section>
+
+    <section class="padded col-9">
+      <div class="restaurant-listing">
+        <div class="grid padded mob-flip">
+          <div class="col-5_sm-12 bg-image" style="background-image: url(/images/bali.jpg)">
+          </div>
+          <div class="col-7_sm-12-middle">
+            <div class="padded">
+              <h4 class="subtle-heading">
+                Lorem ipsum dolor sit amet
+              </h4>
+              <h3>
+                Lorem
+              </h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a class="button" href=""> Read More </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="restaurant-listing">
+        <div class="grid padded mob-flip">
+          <div class="col-5_sm-12 bg-image" style="background-image: url(/images/bali.jpg)">
+          </div>
+          <div class="col-7_sm-12-middle">
+            <div class="padded">
+              <h4 class="subtle-heading">
+                Lorem ipsum dolor sit amet
+              </h4>
+              <h3>
+                Lorem
+              </h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a class="button" href=""> Read More </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
