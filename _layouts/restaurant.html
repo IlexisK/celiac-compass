@@ -73,30 +73,22 @@ layout: default
     </div>
   </div>
 </section>
+<section class="padded centered">
+  <h2> Contributers </h2>
+  <p> Meet the Contributers who wrote about Restaurants and Cuisines in {{page.destination}} </p>
+  <div class="grid padded-1">
 
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Brittany')">Brittany</button>
-  <button class="tablinks" onclick="openCity(event, 'Devon')">Devon</button>
-  <button class="tablinks" onclick="openCity(event, 'Alex')">Alex</button>
-</div>
+    {% for person in page.contributers %}
 
-<div id="Brittany" class="tabcontent">
-  <h3>Brittany</h3>
-  <img src="/images/fair-warung.jpg" alt="#">
-  <img src="#" alt="#">
-  <p> Read about Brittany's experience in Bali </p>
-</div>
+    <div class="col-4_sm-12 padded-1">
+      <a href="{{person.url}}" class="clickable-box bg-image" style="background-image:url('{{person.featured_image}}')">
+        <div class="overlay padded light-text">
+          <h3> {{person.name}} </h3>
+          <p> Contributer </p>
+        </div>
+      </a>
+    </div>
 
-<div id="Devon" class="tabcontent">
-  <h3> Devon </h3>
-  <img src="/images/fair-warung.jpg" alt="#">
-  <img src="#" alt="#">
-  <p> Read about Devon's experience in Bali </p>
-</div>
+    {% endfor %}
 
-<div id="Alex" class="tabcontent">
-  <h3> Alex </h3>
-  <img src="/images/fair-warung.jpg" alt="#">
-  <img src="#" alt="#">
-  <p> Read about Alex's experience in Bali </p>
-</div>
+  </div>
