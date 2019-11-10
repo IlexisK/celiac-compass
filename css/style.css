@@ -11,7 +11,8 @@ alt text color: #813405; */
 light background color: #EADCDE;
 alt light background color: #D3793D; */
 body {
-  font-family: 'Nunito'sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-weight: light;
   color: #5A0001;
 }
 
@@ -54,6 +55,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #813405;
   margin-bottom: 1rem;
   font-size: 5rem;
+  font-family: "Playfair Display";
+  font-weight: normal;
 }
 
 .checked {
@@ -110,6 +113,9 @@ h1, h2, h3, h4, h5, h6 {
 .restaurant-listing {
   margin-bottom: 2rem;
 }
+.restaurant h3 {
+  font-size: .9rem; 
+}
 
 .flex-flip:nth-child(2n) {
   flex-direction: row-reverse;
@@ -137,6 +143,7 @@ h4 {
 
 p {
   font-size: 1rem;
+  font-weight: light;
 }
 
 p, ul {
@@ -240,8 +247,8 @@ hr {
 
 .restaurant-listing a {
   text-transform: uppercase;
-  padding: .3rem;
-  border: 2px solid #5A0001;
+  /* padding: .3rem;
+  border: 2px solid #5A0001; */
 }
 
 .cuisines .bg-img {
@@ -252,8 +259,8 @@ hr {
 
 .cuisines a {
   text-transform: uppercase;
-  padding: .3rem;
-  border: 2px solid #5A0001;
+  /* padding: .3rem;
+  border: 2px solid #5A0001; */
 }
 
 .cuisines {
@@ -268,6 +275,7 @@ a {
 p {
   font-size: 1.1rem;
   line-height: 1.3rem;
+  font-weight: 400;
 }
 
 a:hover {
@@ -276,7 +284,7 @@ a:hover {
 
 section {
   background-color: #dcdde1;
-  color: #7f8c8d;
+  color: rgb(120,120,125);
   padding: 5% 10%;
 }
 
@@ -589,4 +597,22 @@ li{listdecoration:none}
   padding:5px 15px;
   text-align:center;
   white-space:nowrap;
+}
+
+.banner-outer {
+    position: relative;
+}
+
+.banner-outer .overlay {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.3);
+}
+
+.banner-inner {
+  position: relative;
+  z-index: 5;
 }

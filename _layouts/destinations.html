@@ -3,8 +3,8 @@ layout: default
 ---
 
 
-<section class="bg-img fixed grid-top-left" style="background-image: url(/images/bali.jpg)">
-  <div class="tall-50 padding-0">
+<section class="banner-outer bg-img fixed grid-top-left" style="background-image: url(/images/bali.jpg)">
+  <div class="banner-inner tall-50 padding-0">
     <h1>
       {{page.title}}
     </h1>
@@ -12,7 +12,10 @@ layout: default
       {{page.subtitle}}
     </p>
   </div>
+  <div class="overlay"></div>
 </section>
+
+
 <section class="embeded-map">
   {{page.map}}
 </section>
