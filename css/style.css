@@ -178,7 +178,8 @@ hr {
 
 .dark-section .btn {
   /* this is for a button on a dark background */
-  border: 2px solid #363020 color: #363020
+  border: 2px solid #363020;
+  color: #363020
 }
 
 .dark-section .btn:hover {
@@ -452,7 +453,7 @@ header nav a {
   display:inline-block;
   text-decoration: none;
   padding: 15px 11px;
-  font-size: 20px;
+  font-size: 1.3rem;
   font-weight: 300;
   /* color: #C3BFBC;
   font-family: 'Alegreya Sans SC', sans-serif; */
@@ -466,6 +467,7 @@ header nav a {
     padding:5px;
     top: 22px;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 2
 }
 
 .dropdown-content a {
